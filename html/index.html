@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,155 @@
     <link rel="stylesheet" href="/style/style.css">
     
 </head>
+
 <body>
-    <div class="inicio">
-        <header class="navegacion">
-            <a href="#" class="navegacion_item">Inicio</a>
-            <a href="#" class="navegacion_item">Nueva Coleccion</a>
-            <a href="#" class="navegacion_item">Nuestras Gafas</a>
-            <a href="#" class="navegacion_item">Fotos</a>
-            <a href="#" class="navegacion_item">Contacto</a>
-        </header>  
+    
+    <section class="headerimg">
         
-        <div class="inicioRow">
-            <p class="inicioRow_texto1">-HAWKERS RANGER-</p>
-            <a href="#" class="inicioRow_back"></a>
-            <img src="/recursos/Gafas_Hawkers.png" class="inicioRow_gafas" alt="">
-            <a  href="#" class="inicioRow_next"></a>
-            
-            <p class="inicioRow_texto2">-INICIO-</p>
-            
-            
-        </div>
-        <div class="inicio_bottom">
-            <button class="verMas"></button>
-            <a href="#" class="facebook"></a>
-            <a href="#" class="twitter"></a>
-            <a href="#" class="instagram"></a>
-            
-        </div>
-    </div>
-    
-    <div class="nuevaColeccion">
-        <h1 class="nuevaColeccion_titulo">Nueva Coleccion</h1>
-        <div class="nuevaColeccion_1">
-            <div class="nuevaColeccion_background"></div>
-            <div class="nuevaColeccion_imagenGafas"></div>
-        </div>
-        <div class="nuevaColeccion_2">
-            <div class="nuevaColeccion_background2"></div>
-            <div class="nuevaColeccion_imagenGafas2"></div>
-        </div>
+        <nav class="nav">
+            <a href="#" class="nav_item">Inicio</a>
+            <a href="#" class="nav_item">Nueva Colección</a>
+            <a href="#" class="nav_item">Nuestras Gafas</a>
+            <a href="#" class="nav_item">Fotos</a>
+            <a href="#" class="nav_item">Contacto</a>
+        </nav>
         
-    </div>
+        <div class="header_Center">
+            <article class=headerCenter__left>
+                <h2 class="left__text">-HAWKERS RANGER-</h2>
+                <a href=""></a>
+            </article>
+            
+            <div class="center">
+                <img class="center__image" src="/recursos/GAFAS1.png" alt="">
+                <img class="center__image center__image--hide" src="/recursos/GAFAS2.png" alt="">
+                <img class="center__image center__image--hide" src="/recursos/GAFAS3.png" alt="">
+                
+            </div>
+            <article class=headerCenter__right>
+                <h2 class="right__text">-INICIO-</h2>
+                <a href=""></a>
+            </article>
+        </div>
+        <div class="headerBut">
+            <article class=headerBut__left>
+            </article>
+            <button class="headerBut__verMas"></button>
+            <article class="headerBut__media">
+                <a href="#" class="facebook"> <img src="/recursos/facebook.png" alt=""></a>
+                <a href="#" class="twitter"><img src="/recursos/twiiter.png" alt=""></a>
+                <a href="#" class="instagram"><img src="/recursos/instagram.png" alt=""></a>
+            </article>
+        </div>
+    </section>
     
-    
-    
-</body>
-</html>
+    <main class="objects">
+        <section class="colection">
+            
+            <article class="colection__title">
+                <h1>Nueva Colección</h1>
+            </article>
+            
+            <article class="colection__action">
+                <section class="colection__unit">
+                    <img class="unit__glases" src="/recursos/coleccion__gafas1.png" alt="">
+                    <img class="qualitie__imag" src="/recursos/coleccion__foto1.png" alt="">
+                    
+                </section>
+                
+                <section class="colection__unit">
+                    <img class="qualitie__imag qualitie__imag--2" src="/recursos/coleccion__foto2.png" alt="">
+                    <img class="unit__glases unit__glases--2" src="/recursos/coleccion__gafas2.png" alt=""> 
+                </section>
+            </article>
+            
+            <div class="colection__line">
+                
+            </div>
+            <article class="colection__buton">
+                <a class="buton__verMas" href="#">VER MÁS</a>
+            </article>
+        </section>
+        
+        
+        <section class="interaction">
+            <div class="interaction__title">
+                <h1>Nuestras Gafas</h1>
+            </div>
+            
+            <div class="interaction__background">
+                <img class="interaction__glass" src="/recursos/nuestrasGafas__gafa.png" alt="">
+                <div class="interaction__block">
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery">
+            
+            <div class="gallery__title">
+                <h1>Fotos</h1>
+            </div>
+            
+            <div>
+                
+                <div class="gallery__fotos">
+                    <a class=gallery__card href="">
+                        <img class="gallery__f" src="/recursos/fotos_1.png" alt="">
+                    </a>
+                    <a class=gallery__card href="">
+                        
+                        <img class="gallery__f "src="/recursos/fotos_2.png" alt="">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        <footer class="footer">
+            
+            <section class="footer__landing">
+                <img class="footer__logo" src="/recursos/footer__hawkers.png" alt="">
+                
+                <h2 class="footer__text">Suscribete para recibir Información</h2>
+                <input class="footer__email" type="Tu Email">
+                
+            </section>
+            
+            <section class="footer__info">
+                
+                <section class="footer__media">
+                    <a href="#" class="footer__facebook"> <img src="/recursos/footer__fb.png" alt=""></a>
+                    <a href="#" class="footer__twitter"><img src="/recursos/footer__tw.png" alt=""></a>
+                    <a href="#" class="footer__instagram"><img src="/recursos/footer_ig.png" alt=""></a>
+                </section>
+                
+                <section class="footer__tags">
+                    
+                    <article clas="footer__tag">
+                        <ul type="none">
+                            <li class="tags tags--left"> Blog</li>
+                            <li class="tags tags--left"> Acerca de</li>
+                            <li class="tags tags--left"> Asesorias</li>
+                            <li class="tags tags--left"> Derechos de Autor</li>
+                        </ul>
+                    </article>
+                    
+                    <article clas="footer__tag">
+                        <ul type="none">
+                            <li class="tags"> Contacto</li> 
+                            <li class="tags"> Distribuidores</li>
+                            <li class="tags"> Nuestras Oficinas</li>
+                            <li class="tags"> Equipo de Trabajo</li>
+                        </ul>
+                    </article>
+                </footer>
+                
+            </main>
+            <script src="/main.js"></script>
+            
+        </body>
+        
+        </html>

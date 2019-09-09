@@ -1,237 +1,447 @@
 
 body{
-    
-}
-.inicio{
-    background-size: 10px;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 1078px;
-    left: 0px;
-    top: 0px;
-    background-repeat: no-repeat;
-    background-image: url(/recursos/Inicio_Fondo.png);
+    margin: 0px;
+    padding: 0px;
 }
 
-.navegacion{
+.headerimg{
+    background-image: url("/recursos/Inicio__Fondo.png");
+    width: 100%;
+    height: 650px;
     
+    
+}
+
+.nav{
+    padding-top:50px;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    
-    height: 37px;
-    left: 381px;
-    top:50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
 }
-.navegacion_item{
+
+.nav_item{
+    text-decoration: none;
+    margin-left:50px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.nav_item:hover{
+    font-size: 19px;
+    opacity: 1;
+}
+
+.header_Center{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.center{
+    position: relative;
+    
+}
+
+.center__image:first-child{
+    transition: opacity 1s;
+    
+}
+.center__image:nth-child(2){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.center__image:last-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+
+.left__text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-90deg);
+}
+
+.right__text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-90deg);
+}
+
+.headerBut{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center
+}
+.headerBut__left{
+    width:150px;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider__tape{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+
+.slider__tape--inactive{
+    transition: none;
+}
+
+.slider__img{
+    width: 100%;
+}
+
+.headerBut__verMas{
+    background-image: url("/recursos/verMas.png");
+    height: 41px;  
+    width: 248px;
+}
+
+.colection__action{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.colection__unit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.qualitie__imag{
+    margin:0px;
+    padding: 0px;
+    width: 50%;
+}
+
+.qualitie__imag--2{
+    left:0px;
+    width: 50%;
+    
+}
+
+.unit__glases{
+    left:0px;
+    width:50%;
+}
+
+.unit__glases--2{
+    width:50%;
+}
+
+.colection__title:nth-child(1){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    display: flex;
+    align-items: flex-end;
+    
+    color: #000000;
+    
+}
+
+.colection__title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top:60px;
+    margin-bottom: 46px;
+}
+
+.colection__line{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid #A4A4A4;
+    width: 0px;
+    height: 50px;
+    margin-left:50%;
+    margin-top:40px;
+}
+
+.colection__buton{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;    
+    
+}
+
+.buton__verMas{
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 800px;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 20px;
     line-height: 29px;
     display: flex;
     align-items: flex-end;
     text-align: right;
     
-    color: #FFFFFF;
-    
-    opacity: 0.7;
-    margin-left: 60px;
+    color: #A4A4A4; 
+    margin-top:31px;
 }
 
-.navegacion_item:hover{
+.interaction__title :nth-child(1){
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 24px;
     line-height: 44px;
     display: flex;
     align-items: flex-end;
-    text-align: right;
-    
-    color: #FFFFFF;
-    opacity: 1;
-
-}
-
-
-.inicioRow_gafas{
-    position: absolute;
-    width: 1000px;
-    height: 500px;
-    margin-top:200px;
-    margin-left: 20%;
-    
-}
-.inicioRow_texto1{
-    position: absolute;
-    width: 227px;
-    height: 25px;
-    margin-top:400px;
-    margin-left: 10%;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-90deg);
-}
-
-.inicioRow_texto2{
-    position: absolute;
-    width: 79px;
-    height: 25px;
-    margin-top:430px;
-    margin-left: 90%;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-90deg);
-}
-
-
-
-.inicioRow_back{
-    background-image: url(/recursos/Before.png);
-    position: absolute;
-    width: 20px;
-    height: 40px;
-    margin-left:20%;
-    margin-top:440px;
-    
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
-
-.inicioRow_next{
-    background-image: url(/recursos/Next.png);
-    position: absolute;
-    width: 20px;
-    height: 40px;
-    margin-left:85%;
-    margin-top:440px;
-    
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
-
-.verMas{
-    background-image: url(/recursos/VerMas.png);
-    position: absolute;
-    margin-top:750px;
-    margin-left: 40%;
-    width:312px;
-    height: 52px;
-}
-
-
-.facebook{
-    background-image: url(/recursos/Facebook.png);
-    position: absolute;
-    margin-top:755px;
-    margin-left: 80%;
-    width:40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
-
-.twitter{
-    background-image: url(/recursos/twitter.png);
-    position: absolute;
-    margin-top:755px;
-    margin-left: 84%;
-    width:40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
-
-.instagram{
-    background-image: url(/recursos/instagram.png);
-    position: absolute;
-    margin-top:755px;
-    margin-left: 88%;
-    width:40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
-
-.nuevaColeccion_titulo{
-    position: absolute;
-    width: 428px;
-    height: 52px;
-    position: absolute;
-    margin-top:900px;
-    margin-left: 42%;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 59px;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    
+    margin-top:70px;
+    margin-bottom: 70px;
     color: #000000;
-    
-    
 }
 
-.nuevaColeccion_background{
-    position: absolute;
-    width: 50%;
-    height: 400px;
-    left: 0px;
-    top: 1000px;
-    
-    background: #EEEEEE;
-}
 
-.nuevaColeccion_imagenGafas{
-    position: absolute;
+
+.interaction__background{
+    background-image: url("/recursos/nuestrasGafas__fondo.png");
     width: 100%;
-    height: 400px;
-    left: 50%;
-    top: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 695px;
     
-    background: url(/recursos/NuevaColeccion_Gafas1Foto.png);
+    
 }
 
-.nuevaColeccion_background2{
-    position: absolute;
+.interaction__title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.interaction__glass{
+    position: relative;
+    
+}
+
+.gallery__title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.gallery__title :nth-child(1){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    display: flex;
+    align-items: flex-end;
+    margin-top:70px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.gallery__section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    
+    width: 40%;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.gallery__fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+
+.gallery__f{
+    height: 500px;
+    margin:50px;
+    margin-top:0px;
+    
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 300px;
     width: 100%;
-    height: 400px;
-    left: 50%;
-    top: 1400px;
+    background-image: url("/recursos/footer__\ background.png")
     
-    background: #EEEEEE;
 }
 
-.nuevaColeccion_imagenGafas2{
-    position: absolute;
-    width: 50%;
-    height: 400px;
-    left: 0px;
-    top: 1400px;
-    
-    background: url(/recursos/NuevaColeccion_Gafas2Foto.png);
+.footer__landing{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
 }
+
+.footer__info{
+    margin-top:2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.footer__text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height:22px;
+    display: flex;
+    text-align: right;
+    
+    color: #FFFFFF;
+    
+    
+}
+
+.footer__email{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 40%;
+}
+
+.footer__logo{
+    width: 70%;
+}
+
+.footer__tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.tags{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    
+    color: #FFFFFF;
+    
+    
+}
+
+.tags--left{
+    text-align: right;
+}
+
+.footer__media{
+    margin-left:15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
