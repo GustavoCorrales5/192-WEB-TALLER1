@@ -1,6 +1,8 @@
   var pic=document.querySelectorAll('.center__image');
   var button=document.querySelector('.interaction__glasstouch');
   var text=document.querySelectorAll('.interaction__caracteristic');
+
+ 
   var count=0;
   
   var btn = document.querySelector('.mainheader__btn');
@@ -9,8 +11,12 @@
   function handleClick(){
       nav.classList.toggle('nav--active');
   }
+
   
+
+
   btn.addEventListener('click', handleClick);
+
 
 
   setInterval(SwitchPic,4000);
