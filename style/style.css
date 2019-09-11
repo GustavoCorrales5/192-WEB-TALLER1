@@ -817,6 +817,10 @@ body{
         width:80%;
         height: 320px;
     }
+
+    .gallery__card--in{
+        display:none;
+    }
     
     
     
