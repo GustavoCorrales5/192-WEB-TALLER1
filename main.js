@@ -1,46 +1,46 @@
   var pic=document.querySelectorAll('.center__image');
   var button=document.querySelector('.interaction__glasstouch');
   var text=document.querySelectorAll('.interaction__caracteristic');
-
- 
   var count=0;
+  
+  
   
   var btn = document.querySelector('.mainheader__btn');
   var nav = document.querySelector('.nav');
   
   function handleClick(){
-      nav.classList.toggle('nav--active');
-  }
-
-  
-
-
-  btn.addEventListener('click', handleClick);
+    nav.classList.toggle('nav--active');
+}
 
 
 
-  setInterval(SwitchPic,4000);
-  
-   button.addEventListener('click',Information);
 
-  function Information(){
-      console.log('holi');
-      for(var i=0;i<text.length;i++){
-      text[i].style.opacity=1;
-      }
+btn.addEventListener('click', handleClick);
 
-      setInterval(hideTexts,5000);
-     
 
-  }
 
-  function hideTexts(){
+setInterval(SwitchPic,4000);
+
+button.addEventListener('click',Information);
+
+function Information(){
+    console.log('holi');
+    for(var i=0;i<text.length;i++){
+        text[i].style.opacity=1;
+    }
+    
+    setInterval(hideTexts,5000);
+    
+    
+}
+
+function hideTexts(){
     for(var i=0;i<text.length;i++){
         text[i].style.opacity=0;
-        }
-  }
+    }
+}
 
-  function SwitchPic() {
+function SwitchPic() {
     switch(count){
         case 0:
         pic[count].style.opacity=0;
