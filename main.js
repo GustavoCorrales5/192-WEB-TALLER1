@@ -29,7 +29,7 @@ function Information(){
         text[i].style.opacity=1;
     }
     
-    setInterval(hideTexts,5000);
+    setInterval(hideTexts,10000);
     
     
 }
