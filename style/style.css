@@ -52,6 +52,12 @@ body{
         opacity: 1;
         pointer-events: all;
         transform: translate(0%, 0%);
+        background: rgba(51, 52, 53, 0.6);
+        backdrop-filter: blur(4px);
+        height: 180px;
+        top: 0;
+        z-index: 1;
+        width: 250px;
     }
     
     .mainheader__btn{
@@ -725,13 +731,13 @@ body{
     margin-bottom:10px;
     height: 40px;
     text-align: center;
-
+    
 }
 
 
 
 .footerContent__movil{
-
+    
     
     margin-left:37%;
     text-align: center;
@@ -812,12 +818,12 @@ body{
     .footer__InputMovil{
         opacity: 1;
     }
-
+    
     .gallery__f{
         width:80%;
         height: 320px;
     }
-
+    
     .gallery__card--in{
         display:none;
     }
