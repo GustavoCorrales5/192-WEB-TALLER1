@@ -11,7 +11,7 @@ body{
 }
 
 .headerimg{
-    background-image: url("/recursos/Inicio__Fondo.png");
+    background-image: url("./recursos/Inicio__Fondo.png");
     width: 100%;
     height: 650px;
     
@@ -266,7 +266,7 @@ body{
 }
 
 .headerBut__verMas{
-    background-image: url("/recursos/verMas.png");
+    background-image: url("./recursos/verMas.png");
     height: 41px;  
     width: 248px;
 }
@@ -408,7 +408,7 @@ body{
 
 
 .interaction__background{
-    background-image: url("/recursos/nuestrasGafas__fondo.png");
+    background-image: url("./recursos/nuestrasGafas__fondo.png");
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -567,7 +567,7 @@ body{
     align-items: center;
     height: 300px;
     width: 100%;
-    background-image: url("/recursos/footer__\ background.png")
+    background-image: url("./recursos/footer__\ background.png")
     
 }
 
